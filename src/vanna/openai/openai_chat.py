@@ -11,6 +11,7 @@ class OpenAI_Chat(VannaBase):
 
         # default parameters - can be overrided using config
         self.temperature = 0.7
+        self.attempts = 1
 
         if "temperature" in config:
             self.temperature = config["temperature"]
